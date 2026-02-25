@@ -6,8 +6,7 @@ function Features() {
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
         Why RideShare<span className="text-[#BB0000]">@OSU</span>?
       </h2>
-      <div className="max-w-5xl mx-auto grid grid-cols-3 gap-8">
-        <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">        <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
           <div className="flex justify-center mb-4">
             <Car size={40} color="#BB0000" />
           </div>

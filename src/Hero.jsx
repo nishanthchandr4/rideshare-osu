@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 function Hero() {
   return (
     <div className="flex flex-col items-center justify-center text-center px-6 py-24 bg-white">
-      <h1 className="text-5xl font-bold text-gray-900 mb-4">
-        Your Ride. Your People. <span className="text-[#BB0000]">Your OSU.</span>
+      <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">        Your Ride. Your People. <span className="text-[#BB0000]">Your OSU.</span>
       </h1>
       <p className="text-lg text-gray-500 max-w-xl mb-8">
         The ridesharing platform built exclusively for Ohio State students. Find rides, share trips, and connect with Buckeyes going your way.

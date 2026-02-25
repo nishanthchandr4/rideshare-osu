@@ -88,7 +88,7 @@ function BrowseRides() {
           Available <span className="text-[#BB0000]">Rides</span>
         </h1>
         <p className="text-gray-500 mb-10">Find a Buckeye heading your way</p>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {mockRides.map(ride => (
             <RideCard key={ride.id} ride={ride} />
           ))}
