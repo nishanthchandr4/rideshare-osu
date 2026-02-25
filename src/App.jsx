@@ -5,6 +5,7 @@ import Hero from './Hero'
 import Features from './Features'
 import HowItWorks from './HowItWorks'
 import BrowseRides from './pages/BrowseRides'
+import PostRide from './pages/PostRide'
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/rides" element={<BrowseRides />} />
+        <Route path="/post" element={<PostRide />} />
       </Routes>
       <Footer />
     </div>
