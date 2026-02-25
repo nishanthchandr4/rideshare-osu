@@ -1,11 +1,11 @@
 import { Music, Heart, Instagram, MapPin, Star } from 'lucide-react'
 
 const mockUser = {
-  name: "Nishanth C.",
+  name: "Brutus Buckeye",
   major: "Computer Science & Engineering",
-  year: "Junior",
+  year: "Super Senior",
   location: "North Campus",
-  instagram: "@nishanth_osu",
+  instagram: "@brutus_buckeye_rideshare",
   bio: "Buckeye through and through. Love road trips, good music, and meeting new people. Always down to share a ride!",
   music: ["Hip Hop", "R&B", "Afrobeats"],
   interests: ["Basketball", "Gaming", "Photography", "Foodie"],
