@@ -15,7 +15,9 @@ function Navbar() {
           <Link to="/rides" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Browse Rides</Link>
           <Link to="/post" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Post a Ride</Link>
           <Link to="/profile" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Profile</Link>
-          <button className="bg-[#BB0000] text-white px-5 py-2 rounded-full font-medium hover:bg-red-800 transition">Sign In</button>
+          <Link to="/signin">
+            <button className="bg-[#BB0000] text-white px-5 py-2 rounded-full font-medium hover:bg-red-800 transition">Sign In</button>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -30,7 +32,12 @@ function Navbar() {
           <Link to="/rides" onClick={() => setMenuOpen(false)} className="text-gray-600 font-medium hover:text-[#BB0000] transition">Browse Rides</Link>
           <Link to="/post" onClick={() => setMenuOpen(false)} className="text-gray-600 font-medium hover:text-[#BB0000] transition">Post a Ride</Link>
           <Link to="/profile" onClick={() => setMenuOpen(false)} className="text-gray-600 font-medium hover:text-[#BB0000] transition">Profile</Link>
-          <button className="bg-[#BB0000] text-white px-5 py-2 rounded-full font-medium hover:bg-red-800 transition w-full">Sign In</button>
+          <Link to="/signin">
+            <button className="bg-[#BB0000] text-white px-5 py-2 rounded-full font-medium hover:bg-red-800 transition">
+                Sign In
+            </button>
+          </Link>
+
         </div>
       )}
     </nav>

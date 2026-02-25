@@ -7,6 +7,7 @@ import HowItWorks from './HowItWorks'
 import BrowseRides from './pages/BrowseRides'
 import PostRide from './pages/PostRide'
 import Profile from './pages/Profile'
+import SignIn from './pages/SignIn'
 
 function Home() {
   return (
@@ -18,18 +19,25 @@ function Home() {
   )
 }
 
-function App() {
+function Layout({ children }) {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/rides" element={<BrowseRides />} />
-        <Route path="/post" element={<PostRide />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
+      {children}
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/" element={<Layout><Home /></Layout>} />
+      <Route path="/rides" element={<Layout><BrowseRides /></Layout>} />
+      <Route path="/post" element={<Layout><PostRide /></Layout>} />
+      <Route path="/profile" element={<Layout><Profile /></Layout>} />
+    </Routes>
   )
 }
 
