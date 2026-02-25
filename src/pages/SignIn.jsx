@@ -8,13 +8,28 @@ function SignIn() {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!email.endsWith('@osu.edu')) {
       setError('RideShare@OSU is only available to Ohio State students. Please use your @osu.edu email.')
       return
     }
     setError('')
-    setSubmitted(true)
+
+    try {
+      const response = await fetch('https://formspree.io/f/mykdozvy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        setError('Something went wrong. Please try again.')
+      }
+    } catch (err) {
+      setError('Something went wrong. Please try again.')
+    }
   }
 
   return (
