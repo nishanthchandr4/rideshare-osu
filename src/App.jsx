@@ -6,6 +6,7 @@ import Features from './Features'
 import HowItWorks from './HowItWorks'
 import BrowseRides from './pages/BrowseRides'
 import PostRide from './pages/PostRide'
+import Profile from './pages/Profile'
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/rides" element={<BrowseRides />} />
         <Route path="/post" element={<PostRide />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </div>
