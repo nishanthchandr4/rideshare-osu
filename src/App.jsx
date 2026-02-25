@@ -8,6 +8,7 @@ import BrowseRides from './pages/BrowseRides'
 import PostRide from './pages/PostRide'
 import Profile from './pages/Profile'
 import SignIn from './pages/SignIn'
+import MapView from './pages/MapView'
 
 function Home() {
   return (
@@ -37,6 +38,8 @@ function App() {
       <Route path="/rides" element={<Layout><BrowseRides /></Layout>} />
       <Route path="/post" element={<Layout><PostRide /></Layout>} />
       <Route path="/profile" element={<Layout><Profile /></Layout>} />
+      <Route path="/map" element={<Layout><MapView /></Layout>} />
+      <Route path="/signin" element={<Layout><SignIn /></Layout>} />
     </Routes>
   )
 }

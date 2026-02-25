@@ -14,6 +14,7 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-6">
           <Link to="/rides" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Browse Rides</Link>
           <Link to="/post" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Post a Ride</Link>
+          <Link to="/map" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Friend Map</Link>
           <Link to="/profile" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Profile</Link>
           <Link to="/signin">
             <button className="bg-[#BB0000] text-white px-5 py-2 rounded-full font-medium hover:bg-red-800 transition">Sign In</button>
@@ -31,12 +32,14 @@ function Navbar() {
         <div className="md:hidden flex flex-col gap-4 mt-4 pb-4">
           <Link to="/rides" onClick={() => setMenuOpen(false)} className="text-gray-600 font-medium hover:text-[#BB0000] transition">Browse Rides</Link>
           <Link to="/post" onClick={() => setMenuOpen(false)} className="text-gray-600 font-medium hover:text-[#BB0000] transition">Post a Ride</Link>
+          <Link to="/map" className="text-gray-600 font-medium hover:text-[#BB0000] transition">Friend Map</Link>
           <Link to="/profile" onClick={() => setMenuOpen(false)} className="text-gray-600 font-medium hover:text-[#BB0000] transition">Profile</Link>
           <Link to="/signin">
             <button className="bg-[#BB0000] text-white px-5 py-2 rounded-full font-medium hover:bg-red-800 transition">
                 Sign In
             </button>
           </Link>
+          
 
         </div>
       )}
